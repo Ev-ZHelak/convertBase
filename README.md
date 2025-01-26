@@ -1,42 +1,42 @@
-# Конвертер систем счисления на Go
+# Number Base Converter in Go
 
-Этот проект представляет собой конвертер чисел между различными системами счисления.
+This project is a converter for numbers between different number systems.
 
-## Описание
+## Description
 
-Основные особенности:
-- Вывод промежуточных шагов при конвертации в шестнадцатеричную систему.
-- Простой интерфейс с подсказками для пользователя.
+Main features:
+- Displays intermediate steps when converting to the hexadecimal system.
+- Simple user interface with prompts.
 
-## Как пользоваться
+## How to Use
 
-Программа запрашивает у пользователя ввод числа и системы счисления, например:
-
-```
-Введите число и систему счисления (например, 29 16):
-```
-
-После ввода программа выполнит преобразование и выведет результат в указанной системе счисления.
-
-Пример работы программы:
+The program asks the user to input a number and the base system, for example:
 
 ```
-Введите число и систему счисления (например, 29 16): 29 2
-Выполняем преобразование:
-29 / 2 = 14 остаток 1
-14 / 2 = 7 остаток 0
-7 / 2 = 3 остаток 1
-3 / 2 = 1 остаток 1
-1 / 2 = 0 остаток 1
-Переписываем остатки в обратном порядке:
-Результат = 11101
+Enter a number and the base system (e.g., 29 16):
 ```
 
-## Особенности
+After input, the program performs the conversion and displays the result in the specified base.
 
-- Программа поддерживает преобразование в любую систему счисления от 2 до 16.
-- В случае с шестнадцатеричной системой программа выводит дополнительные пояснения, как числа 10-15 отображаются как буквы A-F.
+Example program output:
 
-## Образовательные цели
+```
+Enter a number and the base system (e.g., 29 16): 29 2
+Performing conversion:
+29 / 2 = 14 remainder 1
+14 / 2 = 7 remainder 0
+7 / 2 = 3 remainder 1
+3 / 2 = 1 remainder 1
+1 / 2 = 0 remainder 1
+Rewriting remainders in reverse order:
+Result = 11101
+```
 
-Этот проект создан с целью обучения основам программирования на языке Go, включая обработку пользовательского ввода, работу с циклами и условиями, а также использование пакетов для форматирования вывода.
+## Features
+
+- The program supports conversion to any base between 2 and 16.
+- For hexadecimal conversion, the program provides additional explanations of how numbers 10-15 are represented as letters A-F.
+
+## Educational Purpose
+
+This project is created with the goal of teaching the basics of programming in Go, including handling user input, working with loops and conditionals, and using packages for output formatting.
